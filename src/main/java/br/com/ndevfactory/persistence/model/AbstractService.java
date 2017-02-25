@@ -12,8 +12,8 @@ public abstract class AbstractService<T extends Object> implements Serializable 
 	@Inject
 	protected EntityRepository<T> entityRepository;
 	
-	public Long count(T entity) {
-		return entityRepository.count(entity);
+	public Long count() {
+		return entityRepository.count();
 	}
 
 	public List<T> findAll() {

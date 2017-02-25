@@ -6,7 +6,7 @@ public interface EntityRepository<T extends Object> {
 	
 	boolean contains(T entity);
 	
-	Long count(T entity);
+	Long count();
 
 	List<T> findAll();
 	

@@ -30,7 +30,7 @@ public abstract class AbstractRepository<T extends Object> implements EntityRepo
 	};
 
 	@Override
-	public Long count(T entity) {
+	public Long count() {
 		CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
 		CriteriaQuery<Long> criteriaQuery = criteriaBuilder.createQuery(Long.class);
 
