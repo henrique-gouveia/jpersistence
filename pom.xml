@@ -5,7 +5,7 @@
 
 	<groupId>br.com.ndevfactory</groupId>
 	<artifactId>jpersistence</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 
 	<packaging>jar</packaging>
 
@@ -17,12 +17,12 @@
 		<maven.compiler.target.version>1.8</maven.compiler.target.version>
 		
 		<!-- Weld - Implementacao do CDI -->
-		<weld.version>2.2.10.Final</weld.version>
+		<weld.version>2.4.2.Final</weld.version>
 		<!-- Jandex - Dependência do Weld -->
-		<jandex.version>1.2.3.Final</jandex.version>
+		<jandex.version>2.0.3.Final</jandex.version>
 
-		<!-- Hibernate JPA -->
-		<hibernate.version>4.2.7.Final</hibernate.version>
+		<!-- Hibernate Persistence -->
+		<hibernate.persistence.version>5.2.7.Final</hibernate.persistence.version>
 	</properties>
 
 	<build>
@@ -54,11 +54,11 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- Hibernate JPA -->
+		<!-- Hibernate Persistence -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-			<version>${hibernate.version}</version>
+			<version>${hibernate.persistence.version}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
